@@ -7,11 +7,12 @@ To write a program to implement the the Logistic Regression Model to Predict the
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
-## Algorithm
-1. 
-2. 
-3. 
-4. 
+## Algorithm:
+1. Import the required packages and print the present data.
+2. Print the placement data and salary data.
+3.Find the null and duplicate values.
+4.Using logistic regression find the predicted values of accuracy , confusion matrices.
+5.Display the results.
 
 ## Program:
 ```
@@ -47,7 +48,6 @@ y
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=0)
 from sklearn.linear_model import LogisticRegression
-
 model=LogisticRegression(solver="liblinear")
 model.fit(x_train,y_train)
 y_pred=model.predict(x_test)
